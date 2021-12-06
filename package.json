@@ -5,7 +5,7 @@
   "scripts": {
     "postinstall": "npx husky install",
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve -o --port",
     "build": "ng build",
     "build:stats": "ng build --stats-json",
     "watch": "ng build --watch --configuration development",

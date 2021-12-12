@@ -6,7 +6,15 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-boilerplate": {
+    "ng-i18nify": {
+      "i18n": { // <----------------------------
+        "sourceLocale": "en-US", 
+        "locales": { 
+           "fr": "src/i18n/messages.fr.xlf",
+           "ar": "src/i18n/messages.ar.xlf"
+        } 
+     }, 
+     
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {

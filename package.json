@@ -1,16 +1,17 @@
 {
-  "name": "angular-boilerplate",
+  "name": "ng-i18nify",
   "version": "0.0.0",
   "private": true,
   "scripts": {
     "postinstall": "npx husky install",
     "ng": "ng",
-    "start": "ng serve -o --port",
+    "dev:start": "ng serve -o --port",
     "build": "ng build",
     "build:stats": "ng build --stats-json",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint",
+    "i18n:extract": "ng xi18n",
     "analyze": "webpack-bundle-analyzer dist/angular-boilerplate/stats.json"
   },
   "dependencies": {
@@ -19,6 +20,7 @@
     "@angular/compiler": "~12.2.0",
     "@angular/core": "~12.2.0",
     "@angular/forms": "~12.2.0",
+    "@angular/localize": "^13.1.0",
     "@angular/platform-browser": "~12.2.0",
     "@angular/platform-browser-dynamic": "~12.2.0",
     "@angular/router": "~12.2.0",
